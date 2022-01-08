@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "b3ca2efe-b088-472e-bd2d-55d83e655017",
+		"name": "nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all receiver",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/receiver/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"receiver",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post feedback data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"receiverId\":\"XIYHT\",\r\n    \"feedback\":\"these description about current test2\",\r\n    \"logedin\":\"Zencharhud8426@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/create/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jwttoken-create-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "test1",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "Zencharhud8426@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "abcd",
+							"type": "default"
+						},
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "/C:/Users/admin/Pictures/helloworlddata/TestPopup.PNG"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jwttoken-login-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Zencharhud8426@gmail.com\",\r\n    \"password\":\"abcd\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/auth/verify/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlplbmNoYXJodWQ4NDI2QGdtYWlsLmNvbSIsImlhdCI6MTY0MTUyNTM1OCwiZXhwIjoxNjQxNjExNzU4fQ.XqkMnGnOouGtpRKODLaeF0HL2tawy3V2WUqj3M7UfqU",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"verify",
+						"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlplbmNoYXJodWQ4NDI2QGdtYWlsLmNvbSIsImlhdCI6MTY0MTUyNTM1OCwiZXhwIjoxNjQxNjExNzU4fQ.XqkMnGnOouGtpRKODLaeF0HL2tawy3V2WUqj3M7UfqU"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlplbmNoYXJodWQ4NDI2QGdtYWlsLmNvbSIsImlhdCI6MTY0MTYyNTY2MywiZXhwIjoxNjQxNzEyMDYzfQ.7fqovaLIiT65r_cr6y1wb2KcagcgIvpBEtsoptj_Mts",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-receiver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "receiverImage",
+							"type": "file",
+							"src": "/C:/Users/admin/Pictures/helloworlddata/hello6.PNG"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/addReceiver/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addReceiver",
+						""
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NDEzODI5MzksImV4cCI6MTY0MTQ2OTMzOX0.TIlhBKUenQsJYt8VFzdCUMisEjjDNEbuWWCmX14pW4c",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dashboard",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlplbmNoYXJodWQ4NDI2QGdtYWlsLmNvbSIsImlhdCI6MTY0MTYyNTgxNywiZXhwIjoxNjQxNzEyMjE3fQ.0yeqIVqBFEegwRQkRpWeVPcy1W_pu3SY_uuL2Nm2V2Y",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/auth/dashboard/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"dashboard",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

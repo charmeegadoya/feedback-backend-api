@@ -1,0 +1,70 @@
+
+get and  post api ---->
+registration page--->jwt token---->employee name,email and photo --->api/register -->post --->complete
+password -->bcrypt format 
+after successfully registration --->welcome email
+login--->check for the validation---->email password  --->api/login
+r browser’s local storage  jwt token on login
+
+dashboard/feedback---->list of feedbacks and login user details  --->api/dashboard--->complete
+
+ api/Feedback ---->for getting list of receiver(name and profile image)---->complete
+api/feedback---add feedback(name and  feedback)---->complete
+
+api -->hit that spearates sender(admin) vs reciver list(randomly fetch users)
+
+
+dot env package
+
+
+
+not sender can submit other feedback of reciever
+
+
+password hash
+email sent
+image upload
+proper naming (inputs)
+validations
+flow proper
+
+
+if sender has not given feedback , sender recieve email for adding feedback of user...
+
+
+
+
+
+
+
+
+
+
+
+
+upgrade contracts
+web3.js ---->
+
+
+0xdA1A1a1fcEA4804c53B24E990b6f66213ae9b1D7
+
+
+pancakeswap router and 
+
+async await, 
+
+
+
+
+https://www.quicknode.com/guides/defi/how-to-run-trade-butler-bot-with-quicknode
+https://www.quicknode.com/guides/web3-sdks/how-to-do-a-non-custodial-transaction-with-quicknode
+
+
+understood the concept ...only
+learn about dydx liquidation and 
+compound loan and governance loan----->running doubt
+maker docs
+https://www.quicknode.com/guides/defi/how-to-run-a-keeper-bot-for-mkr-dai-eth-auctions
+https://www.quicknode.com/guides/infrastructure/introduction-to-ethereum-rollups
+https://www.quicknode.com/guides/web3-sdks/how-to-do-a-non-custodial-transaction-with-quicknode
+
