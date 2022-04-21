@@ -1,0 +1,19 @@
+b{
+    color: blueviolet;
+}
+#myHeading{
+    text-shadow: 10px 10px 5px gray;
+}
+.myNavbar{
+    background-color: black;
+    height: 60px;
+    border: white 3px solid;
+}
+.myNavbar ol li{
+    display: inline-block;
+    margin: 10px;
+   
+}
+.myNavbar ol li a{
+   color: white;
+}
